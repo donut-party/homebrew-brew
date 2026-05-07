@@ -2,15 +2,15 @@ class Donut < Formula
   desc "donut is a single-page app framework for Clojure"
   homepage "https://donut.party/"
   license "MIT"
-  url "https://github.com/donut-party/donut-cli/archive/refs/tags/v0.0.7.zip"
-  sha256 "790805c0a8cd5317ad8d5c874fd48934e34cc96132f3334ed6399aaf2f2ed04a"
+  url "https://github.com/donut-party/donut-cli/archive/refs/tags/vSNAPSHOT-REORGANIZE.zip"
+  sha256 "afd2b020a25812f158b611fd444b5c11f0ff8a92bc4a7cd7fe6a5476bc8f8f1b"
 
-  version "0.0.7"
+  version "SNAPSHOT-REORGNIZE-1"
 
   depends_on "borkdude/brew/babashka"
 
   def install
-    bin.install "donut"
+    libexec.install Dir["*"]
   end
 
   test do
