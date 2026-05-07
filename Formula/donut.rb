@@ -1,11 +1,12 @@
 class Donut < Formula
+  v = "0.0.8";
   desc "donut is a single-page app framework for Clojure"
   homepage "https://donut.party/"
   license "MIT"
-  url "https://github.com/donut-party/donut-cli/archive/refs/tags/vSNAPSHOT-REORGANIZE.zip"
-  sha256 "afd2b020a25812f158b611fd444b5c11f0ff8a92bc4a7cd7fe6a5476bc8f8f1b"
+  url "https://github.com/donut-party/donut-cli/archive/refs/tags/v#{v}.zip"
+  sha256 "dcee5c58c3cc7d860d65dc35b9e1eb78289ed75f0a7a584ad1e23299a359aef6"
 
-  version "SNAPSHOT-REORGNIZE-1"
+  version v
 
   depends_on "borkdude/brew/babashka"
 
