@@ -11,7 +11,7 @@ class Donut < Formula
 
   def install
     libexec.install Dir["donut-cli"]
-    bin.write_exec_script libexec/"bin/donut"
+    bin.write_exec_script libexec/"donut-cli/bin/donut"
   end
 
   test do
