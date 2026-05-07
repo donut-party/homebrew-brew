@@ -10,12 +10,8 @@ class Donut < Formula
   depends_on "borkdude/brew/babashka"
 
   def install
-    libexec.install Dir["*"]
-
-    (bin/"donut").write <<~SH
-      #!/bin/bash
-      exec #{libexec}/bin/donut
-    SH
+    libexec.install Dir["donut-cli"]
+    bin.write_exec_script libexec/"bin/donut"
   end
 
   test do
