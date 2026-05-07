@@ -11,6 +11,11 @@ class Donut < Formula
 
   def install
     libexec.install Dir["*"]
+
+    (bin/"donut").write <<~SH
+      #!/bin/bash
+      exec #{libexec}/bin/donut
+    SH
   end
 
   test do
