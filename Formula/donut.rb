@@ -1,10 +1,10 @@
 class Donut < Formula
-  v = "0.0.17"
+  v = "0.0.18"
   desc "donut is a single-page app framework for Clojure"
   homepage "https://donut.party/"
   license "MIT"
   url "https://github.com/donut-party/donut-cli/archive/refs/tags/v#{v}.zip"
-  sha256 "e73ca855f672f20f64e7c5a2654524b57f509f4fc69cf8d5ed7024920b5cc92f"
+  sha256 "d7abc0e3d0546e2502835d6c305670fdf0de216697306a47ea4eed1a7326f861"
 
   version v
 
